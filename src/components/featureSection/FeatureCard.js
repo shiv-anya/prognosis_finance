@@ -12,7 +12,7 @@ const FeatureCard = (props) => {
           <h2 className="text-xl">{props.title}</h2>
           <p className="text-sm text-gray-400">{props.content}</p>
       </div>
-      <button className="flex items-center text-purple-800">See Explained <img alt="" src={Arrow} className="ml-2"/></button>a
+      <button className="flex items-center text-purple-800">See Explained <img alt="" src={Arrow} className="ml-2"/></button>
   </motion.div>)
 }
 
