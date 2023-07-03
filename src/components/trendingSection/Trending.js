@@ -3,7 +3,7 @@ import TrendingCard from "./TrendingCard";
 
 const Trending = () => {
     return (
-        <section className="mx-16 my-32">
+        <section className="mx-16 mt-32">
             <div className="text-white">
                 <h2 className="text-4xl mb-10">Trending Predictions</h2>
                 <p className="text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, fugit!</p>
