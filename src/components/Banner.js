@@ -4,11 +4,14 @@ import Popup from "./Popup";
 const Banner = () => {
   const [isClicked, setIsClicked] = useState(false);
   const earlyAccessListener = () => {
-    setIsClicked(!isClicked);
+    setIsClicked(true);
+  }
+  const closePopUp = () => {
+    setIsClicked(false);
   }
   return (
     <Fragment>
-    {isClicked && <Popup/>}
+    {isClicked && <Popup closePopUp={closePopUp}/>}
     <section className="h-96 text-white flex justify-center align-center">
       <div className="text-primaryGray text-center">
         <h2 className="text-4xl pt-28 pb-3">Prognosis Finance</h2>

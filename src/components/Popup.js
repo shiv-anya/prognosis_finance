@@ -1,11 +1,14 @@
 import React from "react";
 import Cross from "../assets/cross.svg"
 
-const Popup = () => {
+const Popup = (props) => {
+    const closePopUpHandler = () => {
+        props.closePopUp();
+    }
     return (
         <div className="fixed flex justify-center w-full h-screen inset-0 top-10">
         <div className="bg-white rounded-lg h-popup w-popup px-10 pb-10">
-            <div className="flex justify-end py-2"><div className="bg-gray-300 p-2 rounded-full"><img alt="cross" src={Cross}/></div></div>
+            <div className="flex justify-end py-2"><div className="bg-gray-300 p-2 rounded-full" onClick={closePopUpHandler}><img alt="cross" src={Cross}/></div></div>
             <div>
                 <div className="w-82 h-32 bg-gray-300 rounded-lg"></div>
                 <div className="text-center my-2">
