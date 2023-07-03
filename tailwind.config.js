@@ -11,6 +11,12 @@ module.exports = {
       backgroundColor: {
         primaryGreen: "#26B645",
         greenDark: "#0FAE96",
+      },
+      height: {
+        popup: "530px",
+      },
+      width: {
+        popup: "440px"
       }
     },
   },
